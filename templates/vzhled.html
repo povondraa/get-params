@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vzhled</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='vzhled.css') }}">
+
+</head>
+<body class="{{ color_theme}}">
+    <form method="get" action="{{ url_for('vzhled') }}">
+        <label for="color_theme">Vyberte barevné schéma:</label>
+        <select name="theme" id="color_theme">
+            <option value="light">Světlé</option>
+            <option value="dark">Tmavé</option>
+        </select>
+        <button type="submit">Použít</button>
+    </form>
+
+    <h1>Vzhled</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, earum deserunt dolorem facere hic, tempore inventore dignissimos ipsa nostrum consectetur expedita, aperiam quae. Laboriosam perferendis et soluta consectetur quia at?
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex impedit, minima eum earum reiciendis aut repellat quia assumenda id modi distinctio iste, cumque laboriosam nemo, quisquam laborum nulla quo maxime?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt amet maiores, molestiae velit temporibus, eaque veritatis odit neque laboriosam labore veniam quam. Mollitia tempore temporibus voluptatum aut repellendus asperiores nobis?
+    </p>
+</body>
+</html>
